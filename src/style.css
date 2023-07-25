@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  width: 60%;
+  margin: 5% 20%;
+  border: 1px solid #e2dbdb;
+}
+
+.containers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e2dbdb;
+  padding: 24px;
+}
+
+#refresh {
+  background: url('/src/assets/refresh.png');
+  background-size: contain;
+  opacity: 0.8;
+}
+
+button {
+  background: transparent;
+  border: none;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
+#enter {
+  background: url('/src/assets/enter.png');
+  background-size: contain;
+  opacity: 0.5;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e2dbdb;
+  padding-left: 24px;
+  position: relative;
+}
+
+.list {
+  padding: 18px;
+  font-size: 18px;
+  min-width: 85%;
+}
+
+input {
+  border: none;
+  outline: 0;
+}
+
+.square {
+  display: none;
+  background: url('/src/assets/checkbox.png');
+  background-size: contain;
+}
+
+.done {
+  display: none;
+  background: url('/src/assets/checked.png');
+  background-size: contain;
+}
+
+.active {
+  display: block;
+}
+
+.containers input {
+  width: 90%;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.move {
+  background: url('/src/assets/move.png');
+  background-size: contain;
+  position: absolute;
+  top: 16px;
+  right: 24px;
+}
+
+.move:hover {
+  background: url('/src/assets/trash.png');
+  background-size: contain;
+}
+
+.clear {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  background-color: #e9e3e3;
+}
+
+#clear {
+  color: #636363;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+}
